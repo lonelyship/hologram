@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/iv_center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+       
+   />
+
+    <com.example.giftest.CustomGifView
+        android:id="@+id/gifImageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/iv_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+    
+    <com.example.giftest.CustomGifView
+        android:id="@+id/gifImageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/iv_center"
+        android:rotation="90" />
+    
+    <com.example.giftest.CustomGifView
+        android:id="@+id/gifImageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/iv_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:rotation="180" />
+    
+    <com.example.giftest.CustomGifView
+        android:id="@+id/gifImageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/iv_center"
+        android:rotation="270" />
+
+</RelativeLayout>
